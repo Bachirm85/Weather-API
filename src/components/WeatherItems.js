@@ -1,9 +1,20 @@
-import React, { Component } from "react";
-import { render } from "react-dom";
+import React, { Component } from 'react'
+import WeatherItem from './WeatherItem'
 
-export default class WeatherItems extends Component {
-  render() {
-    return <div>WeatherItems</div>;
-  }
+
+export class WeatherItems extends Component {
+    render() {
+        return (
+       <div className="weather">
+        <WeatherItem/>
+        <WeatherItem/>
+        <WeatherItem/>
+        <WeatherItem/>
+        <WeatherItem/>
+        <WeatherItem/>
+      </div>
+        )
+    }
 }
 
+export default WeatherItems
